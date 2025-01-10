@@ -1,0 +1,18 @@
+.column{
+  height: 98vh;
+  width: 30%;
+  border: 1px solid black;
+}
+
+.canvas{
+  border: 1px solid black;
+  height: 98vh;
+  width: 70%;
+ 
+}
+.container{
+  width: 100%;
+  height: 98vh;
+  display: flex;
+
+}
