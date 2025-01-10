@@ -1,5 +1,7 @@
 import './App.css';
 import { useState } from 'react';
+import T3 from './Template/Template3/T3';
+
 
 function Button({ value, onclickhandle }) {
   return <button onClick={onclickhandle}>{value}</button>;
@@ -18,6 +20,7 @@ function Canvas({ rows }) {
           ></textarea>
         ))}
       </div>
+      
     </div>
   );
 }
@@ -46,9 +49,11 @@ function App() {
   }
 
   return (
+    
     <div className="container">
-      <Lcol addTextArea={addTextArea} />
-      <Canvas rows={rows} />
+      {/* <Lcol addTextArea={addTextArea} />
+      <Canvas rows={rows} /> */}
+      <T3></T3>
     </div>
   );
 }
