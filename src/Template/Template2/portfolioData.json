@@ -1,0 +1,56 @@
+{
+    "profile":{
+        "name": "John Doe",
+        "title": "Full Stack Developer",
+        "email": "john.doe@example.com",
+        "github": "https://github.com/johndoe",
+        "linkedin": "https://linkedin.com/in/johndoe",
+        "profileImage": "https://via.placeholder.com/200"
+    },
+    "experience": [
+        {
+            "position": "Senior Developer @ Tech Corp",
+            "date": "2020 - Present",
+            "responsibilities": [
+            "Led development of cloud-native applications",
+            "Managed team of 5 developers",
+            "Implemented CI/CD pipelines"
+            ]
+        }
+    ],
+    "skills": [
+        "JavaScript / TypeScript",
+        "React / Next.js",
+        "Node.js / Express",
+        "Python / Django",
+        "AWS / Docker",
+        "MongoDB / PostgreSQL"
+    ],
+    "projects": [
+        {
+            "title": "E-Commerce Platform",
+            "description": "A full-stack e-commerce solution with real-time inventory management.",
+            "link": "#"
+        },
+        {
+            "title": "AI Chat Assistant",
+            "description": "Natural language processing chatbot with custom training capabilities.",
+            "link": "#"
+        },
+        {
+            "title": "AI Chat Assistant",
+            "description": "Natural language processing chatbot with custom training capabilities.",
+            "link": "#"
+        },
+        {
+            "title": "AI Chat Assistant",
+            "description": "Natural language processing chatbot with custom training capabilities.",
+            "link": "#"
+        },
+        {
+            "title": "AI Chat Assistant",
+            "description": "Natural language processing chatbot with custom training capabilities.",
+            "link": "#"
+        }
+    ]
+}
