@@ -4,10 +4,10 @@
   border: 1px solid black;
 }
 .canvas{
-  border:2px solid red;
-  overflow:scroll;
-  height:98vh;
-  width: 80%;
+  border: 1px solid black;
+  height: 98vh;
+  width: 70%;
+ overflow:scroll
 }
 .container{
   min-width: 100%;
