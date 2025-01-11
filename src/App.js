@@ -1,65 +1,3 @@
-import './App.css';
-import { useState } from 'react';
-
-function Button({ value, onclickhandle }) {
-  return <button onClick={onclickhandle}>{value}</button>;
-}
-
-function Canvas({ rows }) {
-  return (
-    <div className="canvas">
-      <h1>Canvas</h1>
-      <div>
-        {rows.map((_, index) => (
-          <textarea
-            key={index} // Add a unique key for each <textarea>
-            className="textarea"
-            placeholder="Enter Text"
-          ></textarea>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function Lcol({ addTextArea }) {
-  const value = 'Text Box';
-
-  function onclickhandle() {
-    addTextArea();
-  }
-
-  return (
-    <div className="column">
-      <h1>Columns</h1>
-      <Button value={value} onclickhandle={onclickhandle} />
-    </div>
-  );
-}
-
-function App() {
-  const [rows, setRows] = useState([]);
-
-  function addTextArea() {
-    // Add a new entry to the rows array
-    setRows((prevRows) => [...prevRows, {}]);
-  }
-
-  return (
-    <div className="container">
-      <Lcol addTextArea={addTextArea} />
-      <Canvas rows={rows} />
-    </div>
-  );
-}
-
-export default App;
-
-
-
-
-
-
 // import './App.css';
 // import {useState} from 'react';
 // function Button({value,onclickhandle}){
@@ -115,6 +53,71 @@ export default App;
 // export default App;
 
 
+import './App.css';
+import './Template/Template1/T1'
+import { useState } from 'react';
+import T1 from './Template/Template1/T1';
+
+function Button({ value, onclickhandle }) {
+  return <button onClick={onclickhandle}>{value}</button>;
+}
+
+function Canvas({ rows }) {
+  return (
+    <>
+
+    <div className="canvas">
+      <h1>Canvas</h1>
+      {/* <div>
+        {rows.map((_, index) => (
+          <textarea
+            key={index} // Add a unique key for each <textarea>
+            className="textarea"
+            placeholder="Enter Text"
+          ></textarea>
+            
+          
+        ))}
+      </div> */}
+    
+       <T1/>
+   </div>
+    </>
+  );
+}
+
+function Lcol({ addTextArea }) {
+  const value = 'Text Box';
+
+  function onclickhandle() {
+    addTextArea();
+  }
+
+  return (
+    <div className="column">
+      <h1>Columns</h1>
+      <Button value={value} onclickhandle={onclickhandle} />
+    </div>
+  );
+}
+
+function App() {
+  const [rows, setRows] = useState([]);
+
+  function addTextArea() {
+    // Add a new entry to the rows array
+    setRows((prevRows) => [...prevRows, {}]);
+  }
+
+  return (
+    <div className="container">
+      <Lcol addTextArea={addTextArea} />
+      <Canvas rows={rows} />
+    </div>
+  );
+}
+
+export default App;
 
 
 

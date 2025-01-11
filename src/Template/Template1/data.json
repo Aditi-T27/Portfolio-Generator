@@ -1,0 +1,26 @@
+ [
+  {
+      "id": "1",
+      "img": "https://via.placeholder.com/300x200",
+      "title": "Project 1",
+      "content": "This is a description of Project 1. It includes details about the technologies used and the project's purpose."
+  },
+  {
+      "id": "2",
+      "img": "https://via.placeholder.com/300x200",
+      "title": "Project 2",
+      "content": "This is a description of Project 2. It highlights the challenges and accomplishments during development."
+  },
+  {
+      "id": "3",
+      "img": "https://via.placeholder.com/300x200",
+      "title": "Project 3",
+      "content": "This is a description of Project 3. It focuses on the user experience and features implemented."
+  },
+  {
+      "id": "4", 
+      "img": "https://via.placeholder.com/300x200",
+      "title": "Project 4", 
+      "content": "This is a description of Project 4. It focuses on the user experience and features implemented."
+  }
+]

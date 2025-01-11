@@ -1,0 +1,252 @@
+/* .bg{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fc6060;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%; 
+    background:transparent;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding: 0px 10px;
+    margin: 0;
+    display: flex;
+  }
+  
+  .list li {
+    padding: 0px 35px;
+    margin-left: 20px;
+  }
+
+  .name{
+    margin: 4px 70px;
+
+  }
+   */
+
+   /* .bg {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fc6060;
+    background-image: url('https://preview.colorlib.com/theme/alime/img/bg-img/2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.text-overlay {
+    position: absolute; 
+    top: 50%; 
+    left: 20%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 2em; 
+    font-weight: bold; 
+    text-align: center;
+    z-index: 1;
+} */
+ /* Background styles */
+
+ /* Background styles */
+.bg {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://preview.colorlib.com/theme/alime/img/bg-img/2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Text overlay with typing effect */
+.text-overlay {
+    position: absolute; /* Position text on top of the image */
+    top: 30%; /* Center vertically */
+    left: 10%; /* Position it at the left of the screen */
+    transform: translateY(-50%); /* Perfect vertical centering */
+    color: white; /* White text color */
+    font-size: 2em; /* Adjust size as needed */
+    font-weight: bold; /* Optional bold text */
+    text-align: left; /* Align the text to the left */
+    z-index: 1; /* Ensure the text is above the background image */
+    overflow: hidden; /* Hide text initially for typing effect */
+    white-space: nowrap; /* Prevent the text from wrapping */
+    border-right: 3px solid #fc6060; /* Add a blinking cursor effect */
+    width: 0; /* Initially the width is 0 to create the typing effect */
+    animation: typing 3s steps(15) 1s forwards, blink 0.75s step-end infinite; /* Typing animation + cursor blink */
+}
+
+/* Typing effect animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 15%;
+    }
+}
+
+/* Cursor blinking effect */
+@keyframes blink {
+    50% {
+        border-color: transparent; /* Hide the cursor at 50% */
+    }
+}
+
+/* Card styling */
+.text-card {
+    position: absolute; /* Position the card below the text */
+    top: 60%; /* Adjust positioning after typing is complete */
+    left: 5%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Light black background */
+    color: white;
+    padding: 20px;
+    width: 30%; /* Adjust width as needed */
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in forwards; /* Fade-in animation */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.7); /* Adds a semi-transparent black background */
+    color: white; /* Changes text color to white for contrast */
+}
+
+.list {
+    list-style-type: none;
+    padding: 0px 10px;
+    margin: 0;
+    display: flex;
+}
+
+.list li {
+    padding: 0px 35px;
+    margin-left: 20px; /* Adds space between list items */
+}
+
+.name {
+    margin: 4px 70px; /* Adjust the margin for proper alignment */
+}
+.container{
+    display: flex;
+}
+.card {
+    width: 30%;
+    height: auto; /* Adjust height based on content */
+    background-color: #fff; /* White background for the card */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures the image and content don't overflow the card's boundaries */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a soft floating effect */
+    margin: 20px; /* Adds space around the card */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animation for hover effect */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.card-image img {
+    width: 100%; /* Ensure image takes full width */
+    height: 200px; /* Fixed height for the image */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+}
+
+.card-content {
+    padding: 15px; /* Adds padding around the content */
+}
+
+.card-content h1 {
+    font-size: 1.5rem; /* Size of the title */
+    color: #333; /* Dark text color for the title */
+    margin-bottom: 10px; /* Space between title and description */
+}
+
+.card-content p {
+    font-size: 1rem; /* Font size for the description */
+    color: #666; /* Lighter text color for description */
+    line-height: 1.5; /* Adds some space between lines of text */
+}
+
+
+////////////////////////////////
+
+
+.text-overlay {
+    position: absolute; /* Position text on top of the image */
+    top: 30%; /* Center vertically */
+    left: 10%; /* Position it at the left of the screen */
+    transform: translateY(-50%); /* Perfect vertical centering */
+    color: white; /* White text color */
+    font-size: 5em; /* Adjust size as needed */
+    font-weight: bold; /* Optional bold text */
+    text-align: left; /* Align the text to the left */
+    z-index: 1; /* Ensure the text is above the background image */
+    overflow: hidden; /* Hide text initially for typing effect */
+    white-space: nowrap; /* Prevent the text from wrapping */
+    border-right: 3px solid #fc6060; /* Add a blinking cursor effect */
+    width: 0; /* Initially the width is 0 to create the typing effect */
+    animation: typing 3s steps(15) 1s forwards, blink 0.75s step-end infinite; /* Typing animation + cursor blink */
+}
+
+/* Typing effect animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 17%;
+    }
+}
+
+/* Cursor blinking effect */
+@keyframes blink {
+    50% {
+        border-color: transparent; /* Hide the cursor at 50% */
+    }
+}
+//////////////////////////////////////
+.text-card {
+    position: absolute; /* Position the card below the text */
+    top: 45%; /* Adjust positioning after typing is complete */
+    right: 2%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Light black background */
+    color: white;
+    padding: 20px;
+    width: 26%; /* Adjust width as needed */
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in forwards; /* Fade-in animation */
+}
