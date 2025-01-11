@@ -377,7 +377,7 @@ button:hover {
     top: 0;
     left: 0;
     z-index: 1;
-    padding: 10px 20px;
+    padding: 0px 20px;
     background: rgba(0, 0, 0, 0.7); /* Adds a semi-transparent black background */
     color: white; /* Changes text color to white for contrast */
 }
@@ -399,7 +399,7 @@ button:hover {
 }
 .container{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     height: fit-content;
 }
 .card {
@@ -489,10 +489,10 @@ button:hover {
   }
 
   .card {
-    width: 90%; /* Full width */
+    max-width: 100%; /* Full width */
     margin: 10px auto; /* Center cards */
     display: block;
-    text-align: center; /* Center-align content */
+    text-align: center;
   }
   .container{
     display: block;
@@ -559,7 +559,7 @@ button:hover {
   }
 
   .card {
-    width: 90%; /* Full width */
+    max-width: 100%; /* Full width */
     margin: 10px auto; /* Center cards */
     display: block;
     text-align: center; /* Center-align content */
